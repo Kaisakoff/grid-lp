@@ -513,7 +513,8 @@ grid-area: h2;
     grid-template-areas:
     "h2 h2 h2"
     "under-h2 under-h2 under-h2"
-    "tm-1 tm-2 tm-3";
+    "tm-1 tm-2 tm-3"
+    "tm-4 tm-5 tm-6";
     grid-gap: 10px;
     padding: 121px 0 106px;
 }
@@ -529,7 +530,10 @@ grid-area: h2;
 
 .tm-1,
 .tm-2,
-.tm-3 {
+.tm-3,
+.tm-4,
+.tm-5,
+.tm-6 {
     width: 370px;
     height: 440px;
 }
@@ -539,17 +543,51 @@ grid-area: h2;
     background: url("../pic/tm-1.jpg") no-repeat;    
 }
 
-.tm-1 > .test-text {
+.tm-1 > .text-place {
     display: none;   
 }
 
-.tm-1:hover > .test-text {
+.tm-1:hover > .text-place {
     display: block;
     margin: 170px 20px 20px;
-    padding-top: 20px;
+    padding: 54px 51px 42px 38px;
     background: url("../pic/message-bg.png") no-repeat 90% 90%;
     background-size: cover;
     height: 260px;   
+}
+
+.text-h {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.749);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding-bottom: 23px;
+}
+
+.text-h > span {
+    font-size: 16px;
+    font-family: "Merriweather";
+    font-style: italic;
+    text-transform: capitalize;
+    color: #767776;
+}
+
+.text-p {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.741);
+    line-height: 1.75;
+    padding-bottom: 30px;
+}
+
+.social {
+    width: 100%;
+}
+
+.social > img {
+    display: inline-block;
 }
 
 .tm-2 {
@@ -561,6 +599,29 @@ grid-area: h2;
     grid-area: tm-3;
     background: url("../pic/tm-3.jpg") no-repeat;    
 }
+
+.tm-4 {
+    grid-area: tm-4;
+    background: url("../pic/tm-4.jpg") no-repeat;    
+}
+
+.tm-5 {
+    grid-area: tm-5;
+    background: url("../pic/tm-5.jpg") no-repeat;    
+}
+
+.tm-6 {
+    grid-area: tm-6;
+    background: url("../pic/tm-6.jpg") no-repeat;    
+}
+
+.AL_RAYHAN___UI_Designer {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(39, 39, 39, 0.949);
+    font-weight: bold;
+    line-height: 1.2;
+  }
   
 
   
