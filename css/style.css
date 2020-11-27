@@ -503,6 +503,64 @@ grid-area: h2;
 .bl-6 .text > p {
     width: 396px;
 }
+
+/*  small team */
+
+.small-team {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+    "h2 h2 h2"
+    "under-h2 under-h2 under-h2"
+    "tm-1 tm-2 tm-3";
+    grid-gap: 10px;
+    padding: 121px 0 106px;
+}
+
+.small-team > h2 {
+    grid-area: h2;
+}
+
+.small-team > .under-h2 {
+    grid-area: under-h2;
+    padding-bottom: 121px;
+}
+
+.tm-1,
+.tm-2,
+.tm-3 {
+    width: 370px;
+    height: 440px;
+}
+
+.tm-1 {
+    grid-area: tm-1;
+    background: url("../pic/tm-1.jpg") no-repeat;    
+}
+
+.tm-1 > .test-text {
+    display: none;   
+}
+
+.tm-1:hover > .test-text {
+    display: block;
+    margin: 170px 20px 20px;
+    padding-top: 20px;
+    background: url("../pic/message-bg.png") no-repeat 90% 90%;
+    background-size: cover;
+    height: 260px;   
+}
+
+.tm-2 {
+    grid-area: tm-2;
+    background: url("../pic/tm-2.jpg") no-repeat;    
+}
+
+.tm-3 {
+    grid-area: tm-3;
+    background: url("../pic/tm-3.jpg") no-repeat;    
+}
   
 
   
